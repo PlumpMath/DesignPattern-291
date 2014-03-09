@@ -18,14 +18,14 @@ public class LowerCaseInputStream extends FilterInputStream {
     @Override
     public int read() throws IOException {
         int c = super.read();
-        return c == -1 ? c : Character.toLowerCase((char)c);
+        return c == -1 ? c : Character.toLowerCase((char) c);
     }
 
     @Override
     public int read(byte[] b, int off, int len) throws IOException {
         int result = super.read(b, off, len);
         for (int i = off; i < off + result; i++) {
-            b[i] = (byte) Character.toLowerCase((char)b[i]);
+            b[i] = (byte) Character.toLowerCase((char) b[i]);
         }
         return result;
     }
@@ -39,8 +39,8 @@ public class LowerCaseInputStream extends FilterInputStream {
                             new BufferedInputStream(
                                     new FileInputStream("README")));
 
-            while((c = in.read()) >= 0) {
-                System.out.print((char)c);
+            while ((c = in.read()) >= 0) {
+                System.out.print((char) c);
             }
 
             in.close();
