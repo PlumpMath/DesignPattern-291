@@ -11,7 +11,7 @@ import java.util.Iterator;
  * To change this template use File | Settings | File Templates.
  */
 public class EnumerationIterator<T> implements Iterator<T> {
-    Enumeration<T> enumeration;
+    private Enumeration<T> enumeration;
 
     EnumerationIterator(Enumeration<T> enumeration) {
         this.enumeration = enumeration;
