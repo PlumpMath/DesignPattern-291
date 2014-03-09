@@ -14,6 +14,7 @@ public class Singleton {
     private Singleton() {}
 
     // double-checked locking, not available in jdk 1.4 or before
+    // ATTENTION: if you are using more than one class loader
     public static Singleton getInstance() {
         if (instance == null) {
             synchronized (Singleton.class) {
