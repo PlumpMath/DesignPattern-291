@@ -24,6 +24,7 @@ public class CompositeIterator implements Iterator {
         }
     }
 
+    // 递归判断是否还有元素
     public boolean hasNext() {
         if (stack.empty()) {
             return false;
