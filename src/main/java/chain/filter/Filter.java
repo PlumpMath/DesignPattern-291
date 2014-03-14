@@ -1,4 +1,4 @@
-package chain;
+package chain.filter;
 
 /**
  * Created with IntelliJ IDEA.

@@ -1,4 +1,4 @@
-package chain;
+package chain.filter;
 
 import java.util.ArrayList;
 import java.util.List;

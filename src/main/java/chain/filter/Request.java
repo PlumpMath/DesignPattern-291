@@ -1,4 +1,4 @@
-package chain;
+package chain.filter;
 
 /**
  * Created with IntelliJ IDEA.
@@ -7,10 +7,10 @@ package chain;
  * Time: 下午11:16
  * To change this template use File | Settings | File Templates.
  */
-public class Response {
+public class Request {
     private String data;
 
-    public Response() {
+    public Request() {
         this.data = new String();
     }
 
