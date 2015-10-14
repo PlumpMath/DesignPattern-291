@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+import os
+
+
+env = Environment(CXXFLAGS = "-Wall -g -O0")
+
+SetOption('implicit_cache', 1)
+
+for source in Glob('src/*.cpp'):
+    env.Program(target=''.join(os.path.basename(str(source)).split('.')[:-1]),
+                source=[source])
+
