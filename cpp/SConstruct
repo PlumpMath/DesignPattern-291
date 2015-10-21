@@ -11,3 +11,7 @@ for source in Glob('src/*.cpp'):
     env.Program(target=''.join(os.path.basename(str(source)).split('.')[:-1]),
                 source=[source])
 
+for source in Glob('basic/*.cc'):
+    env.Program(target=''.join(os.path.basename(str(source)).split('.')[:-1]),
+                source=[source])
+
